@@ -1,0 +1,15 @@
+//Program to reverse the string.
+
+#include <iostream>
+
+using namespace std;
+
+
+int main(){
+    string str="python";
+    int i, j;
+    for(i=0, j=str.length()-1; i<j; i++, j--){
+        swap(str[i], str[j]);
+    }
+    cout<<str;
+}
