@@ -1,0 +1,19 @@
+//Program to finding duplicates in a string
+
+#include <iostream>
+
+using namespace std;
+
+
+int main(){
+    string str="finding";
+    for(int i=0; i<str.length()-1; i++){
+        for(int j=0; j<str.length()-1; j++){
+            if(str[i]==str[j]){
+                cout<<"The duplicate is "<<str[i]<<endl;
+            }
+        }
+    }
+    
+}
+
