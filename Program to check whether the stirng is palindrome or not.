@@ -1,0 +1,20 @@
+//Program to check whether the stirng is palindrome or not.
+
+#include <iostream>
+
+using namespace std;
+
+
+int main(){
+    string str="madam";
+    int i,j;
+    for(i=0, j=str.length()-1; i<=j; i++, j--){
+        if(str[i]!=str[j]){
+            cout<<"Strings are not palindrome";
+            return 0;
+        }
+    }
+    cout<<"Strings are palindrome";
+    return 0;
+    
+}
