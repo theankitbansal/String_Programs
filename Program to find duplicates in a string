@@ -17,3 +17,29 @@ int main(){
     
 }
 
+
+// C++ program to count all duplicates from string using maps
+  #include <bits/stdc++.h>
+  using namespace std;
+  void printDuplicates(string str)
+  {
+   map<char, int> count;
+   for (int i = 0; i < str.length(); i++) {
+    count[str[i]]++;
+}
+  cout << "Duplicate characters in a given string:"; 
+  for (auto it : count) { 
+    if (it.second > 1)
+     cout<< it.first<< " ";
+ }
+}
+// Driver code
+  int main()
+ {
+   string str ;
+   cout<<"Enter the string : \n";
+   getline(cin,str);
+
+   printDuplicates(str);
+   return 0;
+}
