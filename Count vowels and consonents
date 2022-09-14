@@ -1,0 +1,21 @@
+//Program to count the vowels and consonents
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string str= "How are you";
+    int countVowels=0;
+    int countConsonents=0;
+    int i;
+    for(i=0; str[i]!='\0'; i++){
+        if(str[i]=='a' || str[i]=='A'|| str[i]=='e' || str[i]=='E' || str[i]=='i' || str[i]=='I' || str[i]=='o' || str[i]=='O' || str[i]=='u' || str[i]=='U'){
+            countVowels++;
+        }else if((str[i]>=65 && str[i]<=90) || (str[i]>=97 && str[i]<=122)){
+            countConsonents++;
+        }
+    }
+    cout<<countVowels<<endl<<countConsonents<<endl;
+}
