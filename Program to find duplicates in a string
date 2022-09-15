@@ -43,3 +43,26 @@ int main(){
    printDuplicates(str);
    return 0;
 }
+
+
+// Program to find duplicates in string using bits
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string str="finding";
+    long int H=0, x=0;
+    int i;
+    for(i=0; str[i]!='\0'; i++){
+        x=1;
+        x=x<<(str[i]-97);
+        if((x&H)>0){
+            cout<<"Duplicate is "<<str[i]<<endl;
+        }
+        else{
+            H=x|H;
+        }
+    }
+}
